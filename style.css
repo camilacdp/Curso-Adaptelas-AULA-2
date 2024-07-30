@@ -7,34 +7,70 @@ body{
     padding: 0;
     margin: 0;
 }
-#cabecalho{
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
     border:#610588;
-    padding: 20px 100px 20px 100px;
+    padding: 20px 120px 20px 120px;
     background-color: #610588;
     margin: 0px;
-    color: #F2F2F2;
-    
 }
-#main_text>h1{
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+a{
+    color: #F2F2F2;
+    text-decoration: none;
+    padding-left: 50px;
+    font-size: 18px;
+}
+#main{
+    padding: 0 120px 0 120px;
     color: #610588;
-    font-size: 40px;
-    text-align: center;
+    display: flex;
+    align-items:center;
 }
 #main_text{
-    padding: 20px 100px 20px 100px;
+    padding-right: 150px;
+    flex-direction: column;
+}
+#main_text h1{
     color: #610588;
+    font-size: 55px;
+    text-align: center;
+}
+#main_text p{
+    font-size: 20px;
     text-align: justify;
+}
+#main img{
+    padding: 50px 0 50px 0;
 }
 .card{
     border:#610588;
-    padding: 50px 80px 50px 80px;
+    padding: 40px 120px 40px 120px;
     background-color: #610588;
     margin: 0px;
-    text-align: justify;
-    
+    display: flex;
+    align-items: center;
 }
-.card>h2{
-    text-align: center;
+.card img{
+    padding-right: 300px;
+    max-width: 150px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+}
+.card h2{
+    text-align:center;
+}
+#text_sobre p {
+    padding-left: 200px;
+    text-align: justify;
 }
 #rodape{
     text-align: center;
@@ -42,13 +78,10 @@ body{
     background-color: #BBAACC;
     margin: 0;
     padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
 }
-#rodape>span{
+span{
     color: #F2F2F2;
-}
-.card img{
-    max-width: 200px;
-    max-height: 200px;
-    width: auto;
-    height: auto;
+    padding-left: 20px;
 }
